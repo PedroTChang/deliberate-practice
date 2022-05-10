@@ -250,16 +250,37 @@
 # p length
 #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
-
+# people = [{ name: "Hanna", age: 26 }, { name: "Pedro", age: 30 }]
+# age = people.map do |person|
+#   person[:age]
+# end
+# p age
 #  7. Start with an array of numbers and create a new array with each number divided by 2.
 #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
-
+# array = [1, 2, 3]
+# half = array.map do |number|
+#   number / 2.0
+# end
+# p half
 #  8. Start with an array of strings and create a new array with each string's first letter only.
 #     For example, ["hello", "goodbye"] becomes ["h", "g"].
-
+# strings = ["yo", "what's", "up"]
+# first_letter = strings.map do |string|
+#   string[0]
+# end
+# p first_letter
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
-
+# people = [{ name: "Hanna", age: 26 }, { name: "Pedro", age: 30 }]
+# double_age = people.map do |person|
+#   person[:age] * 2
+# end
+# p double_age
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
+# numbers = [1, 3, 2, 4, 5]
+# strings = numbers.map do |number|
+#   number.to_s
+# end
+# p strings
 # SOLUTIONS (using .map shortcut): https://gist.github.com/peterxjang/23a8f8a51601e4288ba3a8aa6d1f1c98
