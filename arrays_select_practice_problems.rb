@@ -31,3 +31,52 @@
 # SOLUTIONS (using while loop): https://gist.github.com/peterxjang/7de16ed43ea506e98df3fa15074b84f8
 # SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/a702894841c7018ed8c127b647ae21f8
 # SOLUTIONS (using .select shortcut): https://gist.github.com/peterxjang/b8c8fb8b77b2cae7bb9cc62a3a434761
+
+# while loop
+
+# .each shortcut
+# 1.
+# array = [123, 456, 789, 10, 19]
+# new_array = []
+# array.each do |number|
+#   if number < 20
+#     new_array << number
+#   end
+# end
+# p new_array
+# 2.
+# array = ["winner", "winner", "chicken", "dinner"]
+# new_array = []
+# array.each do |string|
+#   if string[0] == "w"
+#     new_array << string
+#   end
+# end
+# p new_array
+# items = [{ name: "Chair", price: 125 }, { name: "Sticker", price: 3 }, { name: "Tissues", price: 5 }]
+# expensive_items = []
+# items.each do |items|
+#   if items[:price] > 10
+#     expensive_items << items
+#   end
+# end
+# p expensive_items
+# .map shortcut
+# 3.
+# items = [{ name: "chair", price: 125 }, { name: "table", price: 250 }, { name: "bed sheets", price: 15 }]
+# expensive_items = []
+# items.each do |item|
+#   if item[:price] > 50
+#     expensive_items << item
+#   end
+# end
+# p expensive_items
+# 4
+# numbers = [1, 2, 3, 4, 5, 6]
+# evens = []
+# numbers.each do |number|
+#   if number % 2 == 0
+#     evens << number
+#   end
+# end
+# p evens
